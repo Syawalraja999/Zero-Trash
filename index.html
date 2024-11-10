@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero Trash</title>
+    <link rel="stylesheet" href="style.css">
+    <head>
+        <link rel="icon" href="logo/logo1.png" type="image/png">
+    </head>    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="logo"><img src="logo/logo1.png" alt="Logo"></h2>
+            <nav class="navigation">
+                <a href="#" class="active">Home</a>
+                <a href="#">Dashboard</a>
+                <a href="#">Feature</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+
+        <section class="jumbo">
+            <img src="image/hill1.png" alt="" id="hill1">
+            <img src="image/hill2.png" alt="" id="hill2">
+            <img src="image/hill3.png" alt="" id="hill3">
+            <img src="image/hill4.png" alt="" id="hill4">
+            <img src="image/hill5.png" alt="" id="hill5">
+            <img src="image/tree.png" alt="" id="tree">
+            <img src="image/leaf.png" alt="" id="leaf">
+            <img src="image/plant.png" alt="" id="plant">
+            <h2 id="text">Zero Trash</h2>
+        </section>
+
+        <section class="content">
+            <h2>Selamat Datang di Zero Trash</h2>
+            <p>Zero Trash adalah inisiatif yang didedikasikan untuk menciptakan dunia yang lebih bersih dan hijau. Kami memahami bahwa sampah adalah salah satu masalah lingkungan terbesar di bumi saat ini. Dengan program Zero Trash, kami tidak hanya mengajak masyarakat untuk mengurangi sampah, tetapi juga memberikan kesempatan untuk mengubah sampah menjadi sesuatu yang bermanfaat.
+
+                Setiap sampah yang dikumpulkan dan dipilah secara benar dapat diubah menjadi poin yang bisa ditukarkan dengan berbagai hadiah menarik, atau bahkan digunakan untuk mendukung inisiatif hijau lainnya. Bersama-sama, kita bisa mengurangi jumlah sampah, melestarikan alam, dan membangun masa depan yang lebih sehat bagi generasi mendatang.
+                
+                Mari bergabung dengan Zero Trash dan jadilah bagian dari solusi untuk bumi yang lebih baik. Setiap tindakan kecil yang kita lakukan memiliki dampak besar dalam menjaga kelestarian lingkungan kita.</p>
+
+
+            <div class="image-container">
+                <img src="image/PosterLingkungan.jpeg" alt="Image 1" class="lightbox-trigger" data-image="https://via.placeholder.com/600x600?text=Image+1">
+                <img src="image/recyle.jpeg" alt="Image 2" class="lightbox-trigger" data-image="https://via.placeholder.com/600x600?text=Image+2">
+                <img src="image/poster1.jpeg" alt="Image 3" class="lightbox-trigger" data-image="https://via.placeholder.com/600x600?text=Image+3">
+            </div>
+        
+            <!-- Lightbox (tersembunyi awalnya) -->
+            <div class="lightbox" id="lightbox">
+                <img id="lightbox-img" src="" alt="Lightbox Image">
+                <div class="lightbox-close" id="close-lightbox">Close</div>
+            </div>
+
+
+        <!-- New Content Section 1 -->
+        <section class="section">
+            <h2>Visi</h2>
+            <p>Menjadi pelopor dalam pengelolaan sampah berbasis komunitas yang berkelanjutan, dengan memberdayakan masyarakat untuk memilah, mengolah, dan mendaur ulang sampah guna menciptakan lingkungan yang lebih bersih, sehat, dan ramah lingkungan.</p>
+        </section>
+
+        <!-- New Content Section 2 -->
+        <section class="section">
+            <h2>Our Mission</h2>
+            <p>1.Membangun Kesadaran dan Partisipasi Masyarakat <br>
+                2.Mengimplementasikan Sistem Pengelolaan Sampah yang Terpadu <br>
+                3.Mendorong Daur Ulang dan Pengolahan Sampah <br>
+                4.Memperkuat Infrastruktur Pengelolaan Sampah
+                5.Mengurangi Sampah melalui Pemberdayaan Komunitas</p>
+        </section>
+
+        <!-- Dashboard Section -->
+<section class="section" id="dashboard">
+    <h2>SISTEM INFORMASI LINGKUNGAN HIDUP KOTA BATAM</h2>
+    <div class="dashboard-container">
+        <div class="chart-container">
+            <canvas id="staffStatus"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="staffDistribution"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="budget"></canvas>
+        </div>
+        <div class="chart-container">
+            <canvas id="wasteTransport"></canvas>
+        </div>
+    </div>
+</section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <p>© 2024 Zero Trash. All rights reserved. <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </footer>
+
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
