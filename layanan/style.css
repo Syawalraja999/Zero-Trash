@@ -1,0 +1,436 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body {
+    background-color: #fff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container{
+    position: relative;
+    margin: 0 auto;
+}
+
+/* header */
+.header{
+    align-items: center;
+    max-width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.header img{
+    margin-top: 30px;
+    margin-left: 33px;
+    width: 150px;
+    height: 150px;
+}
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    font-weight: 600;
+    border-radius: 25px;
+}
+.navigation{
+    margin-right: 245px;
+    margin-top: 50px;
+    margin-left: 253px;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: hwb(169 21% 42%);
+    color: #fff;
+}
+/* end header */
+
+/* halaman 1 */
+.container-first{
+    border-radius: 5px;
+    position: relative;
+    padding-top:50px ;
+    background-color: #252525;
+    color: aliceblue;
+    padding-left: 60px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.head-1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.head-1 #l1{
+    font-size: 25px;
+    color: #FFD966;
+}
+.head-2{
+    position: absolute;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110px;
+    height: 30px;
+    color: black;
+    background: #FFD966;
+    border-radius: 5px;
+}
+.head-2 a{
+    text-decoration: none;
+    color: black;
+}
+.header-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.content-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin-top: 20px;
+}
+.items p{
+    font-size: 12px;
+}
+.content-items .items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.content-items img{
+    width: 250px;
+}
+.items,
+.items-reversal div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+.items-reversal img{
+    order: 2;
+    margin-bottom: 22px;
+}
+.items-reversal div{
+    margin-top: 22px;
+    order: 1;
+}
+.items a{
+    text-decoration: none;
+    color: #FFD966;
+}
+.items a:hover{
+    color: white;
+}
+/* end halaman 1 */
+
+/* halaman 2 */
+.peringkat-kontainer{
+    position: relative;
+    border-radius: 5px;
+    background-color: #FFFFCC;
+    color: aliceblue;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding-top: 80px;
+    padding-left: 120px;
+    padding-bottom: 100px;
+}
+.peringkat-kontainer img{
+    max-width: 380px;
+    max-height: 550px;
+}
+
+.step-1{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 550px;
+    
+}
+.penjelasan{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.rating{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    width: 230px;
+    height: 70px;
+    display: flex;
+    border-radius: 10px;
+}
+.rating #rate{
+    color: #38761D;
+    font-weight: bold;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.rating p{
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+}
+.step-1 #star{
+    text-shadow: 0 0 1px #222;
+    color: #EDF408;
+}
+.penjelasan h5{
+    color: #38761D;
+}
+.penjelasan h3{
+    color: black;
+}
+.penjelasan p{
+    color: #222;
+    font-size: 13px;
+}
+.btn-p-lanjut button{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    padding-bottom: 2px;
+    background-color: #2f9e33;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+}
+.btn-p-lanjut:hover button{
+    background-color: #38761D;
+}
+.step-2{
+    display: flex;
+    position: absolute;
+    bottom: 135px;
+    right: 150px;
+}
+.step-2 img{
+    margin-top: 12px;
+}
+.step-2 .road{
+    width: 140px;
+    height: 110px;
+    background-color: white;
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 7px;
+}
+.step-2 .road h4{
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+.step-2 .road p{
+    font-size: 10px;
+    color: #222;
+    text-align: center;
+    padding-bottom: 13px;
+}
+/* end halaman 2 */
+
+/* halaman 3 */
+.kontainer-kinerja{
+    border-radius: 5px;
+    position: relative;
+    max-width: 1000px;
+    margin:  0 auto;
+    background-color: #133902;
+}
+.kontainer-posisi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+.kontainer-kinerja img{
+    max-width: 550px;
+    max-height: 370px;
+}
+.kontainer-kiri{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.head-judul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+.head-judul h5{
+    color: #FFD966;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.header-kinerja button{
+    height: 34px;
+    width: 150px;
+    line-height: 13px;
+    border-radius: 5px;
+    font-weight:bold;
+    background-color: #FFD966;
+    box-shadow: 1px 1px 1px #333;
+}
+.header-kinerja{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.kontainer-kanan{
+    grid-template-columns: 1fr 1fr;;
+    display: grid;
+    align-items: center;
+    margin-right: 100px;
+    gap: 30px;
+}
+.box-content{
+    width: 140px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #FFD966;
+    gap: 5px;
+    border-radius: 5px;
+}
+.box-content img{
+    width: 50px;
+    height: 50px;
+}
+.box-content h1{
+    text-align: center;
+    line-height: 33px;
+    color: #FFD966;
+}
+.box-content h4{
+    color: #fff;
+}
+#one-line img{
+    margin-bottom: 25px;
+}
+
+
+/* QUERY responsive */
+@media (max-width:900px){
+    /* halaman 1 */
+    .container-first {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .content-items{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .content-items img{
+        width:100%;
+    }
+    .items,
+    .items-reversal div{
+        width: 100%;
+    }
+    .head-2 {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+    /* halaman 2 */
+    .peringkat-kontainer{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .step-1{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        right: unset;
+        width: 100%;
+    }
+    .rating{
+        width: 100%;
+        margin-top: 15px;
+        justify-content: center;
+    }
+    .penjelasan{
+        width: 100%;
+        text-align: center;
+        gap: 15px;
+    }
+    .peringkat-kontainer img {
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px){
+    /* halaman 1 */
+    .content-items{
+        grid-template-columns: 1fr;
+    }
+    .head-2{
+        position: static;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .items-reversal img {
+        order: 0; /* Urutan gambar kembali normal di layar kecil */
+        margin-bottom: 10px;
+    }
+
+    .items-reversal div {
+        order: 1;
+        margin-top: 0;
+    }
+    /* end halaman 1 */
+
+
+    /* halaman 2 */
+    .peringkat-kontainer{
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .step-1{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .rating{
+        width: 100%;
+        height: auto;
+    }
+    .penjelasan{
+        width: 100%;
+        text-align: center;
+    }
+    .peringkat-kontainer img {
+        width: 100%;
+        height: auto;
+    }
+    /* end halaman 2 */
+}
