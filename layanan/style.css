@@ -13,18 +13,22 @@ body {
 .container{
     position: relative;
     margin: 0 auto;
+    margin-top: 34px;
 }
 
 /* header */
 .header{
+    background-color: #f2f0fd;
+    box-shadow: 0 0 1px rgba(0, 0,0,0.2);
+    border-radius: 10px;
     align-items: center;
     max-width: 90%;
     display: flex;
     justify-content: flex-start;
     margin: 0 auto;
+    margin-bottom: 10px;
 }
 .header img{
-    margin-top: 30px;
     margin-left: 33px;
     width: 150px;
     height: 150px;
@@ -38,7 +42,6 @@ body {
 }
 .navigation{
     margin-right: 245px;
-    margin-top: 50px;
     margin-left: 253px;
 }
 
@@ -58,7 +61,7 @@ body {
     color: aliceblue;
     padding-left: 60px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1210px;
 }
 .head-1{
     display: flex;
@@ -141,7 +144,7 @@ body {
     background-color: #FFFFCC;
     color: aliceblue;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 1210px;
     padding-top: 80px;
     padding-left: 120px;
     padding-bottom: 100px;
@@ -255,7 +258,7 @@ body {
 .kontainer-kinerja{
     border-radius: 5px;
     position: relative;
-    max-width: 1000px;
+    max-width: 1210px;
     margin:  0 auto;
     background-color: #133902;
 }

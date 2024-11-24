@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zero Trash</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <head>
-        <link rel="icon" href="logo/logo1.png" type="image/png">
+        <link rel="icon" href="../logo/logo1.png" type="image/png">
     </head>    
 
 
@@ -14,27 +16,13 @@
 <body>
     <div class="container">
         <div class="header">
-            <h2 class="logo"><img src="logo/logo1.png" alt="Logo"></h2>
+            <h2 class="logo"><img src="../logo/logo1.png" alt="Logo"></h2>
             <nav class="navigation">
-                <a href="#" class="active">Home</a>
-                <a href="tentang/tentang.html">Tentang</a>
-                <a href="layanan/layanan.html">Layanan</a>
+                <a href="../index.html" class="active">Home</a>
+                <a href="../layanan/layanan.html">Layanan</a>
                 <a href="#" style="color: #7db2b9; background-color: #f5f5f5;">coming soon</a>
             </nav>
         </div>
-
-        <section class="jumbo">
-            <img src="image/hill1.png" alt="" id="hill1">
-            <img src="image/hill2.png" alt="" id="hill2">
-            <img src="image/hill3.png" alt="" id="hill3">
-            <img src="image/hill4.png" alt="" id="hill4">
-            <img src="image/hill5.png" alt="" id="hill5">
-            <img src="image/tree.png" alt="" id="tree">
-            <img src="image/leaf.png" alt="" id="leaf">
-            <img src="image/plant.png" alt="" id="plant">
-            <h1 id="teks">Welcome To</h1>
-            <h2 id="text">Zero Trash Project</h2>
-        </section>
 
         <section class="hero">
             <div class="hero-content">
@@ -47,104 +35,117 @@
                 <span><a href="#" class="button">Explore</a>
                     <a href="#" class="button1">learn more</a></span>
 
-                <div class="container-syms">
-                    <div class="sym">
-                        <img src="image/bag.png" alt="">
-                        <span><h2>Sampah Organik</h2>
-                            <p>Sampah yang berasal dari 
-                                bahan-bahan alami dan 
-                                mudah terurai secara 
-                                biologis oleh mikroorganisme</p></span>   
+                    <div class="form-container">
+                        <form>
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap*</label>
+                            <input type="text" id="name" placeholder="Masukan Nama Anda">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Melayani*</label>
+                            <select id="service">
+                            <option value="" disabled selected>Pilihan Layanan</option>
+                            <option value="layanan1">Layanan 1</option>
+                            <option value="layanan2">Layanan 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="industry">Jenis Industri*</label>
+                            <select id="industry">
+                            <option value="" disabled selected>Pilih Industri</option>
+                            <option value="industri1">Industri 1</option>
+                            <option value="industri2">Industri 2</option>
+                            </select>
+                        </div>
+                        <button  id="myButton" type="submit" class="submit-button" onclick="showAlert()">Pesan Sekarang</button>
+                        </form>
                     </div>
-                    <div class="sym">
-                        <img src="image/coffe.png" alt="">
-                        <span><h2>Sampah Anorganik</h2>
-                            <p>Sampah yang sulit terurai secara
-                                alami dan biasanya berasal dari
-                                bahan-bahan sintetis atau hasil 
-                                manufaktur.</p></span> 
-                    </div>
+
+            </div>
+            <img src="../image/pictJumbo.png" alt="Waste Management" class="hero-image">
+
+            <section class="fitur">
+                <div class="tidur">
+                    <div class="bulat"></div>
+                    <p>Pembuangan Limbah Berbahaya</p>
+                </div>
+                <div class="tidur">
+                    <div class="bulat"></div>
+                    <p>Pengumpulan di Tempat <br>Pembuangan Sampah</p>
+                </div>
+                <div class="tidur">
+                    <div class="bulat"></div>
+                    <p>Penyewaan Tempat Pembuangan Sampah</p>
+                </div>
+                <div class="tidur">
+                    <div class="bulat"></div>
+                    <p>Pengomposan</p>
+                </div>
+                <div class="tidur">
+                    <div class="bulat"></div>
+                    <p>Daur Ulang Limbah Elektronik</p>
+                </div>
+                <div class="tidur">
+                    <div class="bulat"></div>
+                    <p>Analisis Aliran Limbah</p>
+                </div>
+            </section>
+
+            <div class="container-proses">
+                <div class="proses">
+                    <h4>Pembuangan yang Aman</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi</p>
+                </div>
+                <div class="garis"></div>
+                <div class="proses">
+                    <h4>Penjemputan Terjadwal</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi</p>
+                </div>
+                <div class="garis"></div>
+                <div class="proses">
+                    <h4>Daur Ulang yang Luas</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi</p>
                 </div>
             </div>
-            <img src="image/pictJumbo.png" alt="Waste Management" class="hero-image">
         </section>
 
-        <div class="solusi-container">
-            <span>
-                <h1>solusi</h1>
-                <h2>pengolahan sampah</h2>
 
-                <div class="pengolahan">
+        <div class="container-info">
+            <div class="text-section">
+                <h3 id="j1">Tentang Kami</h3>
+                <h3 id="j2">Pakar Terpercaya dalam Pengelolaan Sampah dan Daur Ulang</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis doloribus enim recusandae natus repellendus rerum autem quibusdam ad </p>
+                <ul>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                </ul>
+                <div class="about-info">
                     <span>
-                        <img src="image/solusi1.png" alt="">
-                        <h3>Pengumpulan & Pemilahan</h3>
-                        <p>Mulailah dengan mengumpulkan <br>
-                            sampah danmemilahnya sesuai <br>
-                            dengan jenisnya: organik, anorganik</p>
+                        <h5>Layanan Sampah</h5>
+                        <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
                     </span>
                     <span>
-                        <img src="image/solusi2.png" alt="">
-                        <h3>Pengolahan Sampah Organik</h3>
-                        <p>Sampah organik yang terkumpul <br>
-                            dapat diolah menjadi kompos melalui <br> 
-                            proses komposting</p>
-                    </span>
-                    <span>
-                        <img src="image/solusi3.png" alt="">
-                        <h3>Daur Ulang Sampah
-                            Anorganik</h3>
-                        <p>Sampah anorganik, seperti plastik,<br>
-                            kertas, kaca, dan logam, bisa didaur ulang <br>
-                            atau dimanfaatkan kembali.Proses ini <br>
-                            memungkinkan penggunaan kembali <br>
-                            material, mengurangi produksi baru, dan <br>
-                            menghemat sumber daya alam.</p>
+                        <h5>Daur Ulang</h5>
+                        <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
                     </span>
                 </div>
-            </span>
-        </div>
+                <div class="btn-p-lanjut"><button>Pelajari Lebih Lanjut</button></div>
+            </div>
 
-        <div class="edukasi">
-            <img src="image/edukasi.png" alt="">
-            <span>
-                <h5>WELCOME TO ZERO TRASH</h5>
-                <h4>Making Batam a Cleaner Future</h4>
-                <p>Zerotrash bertujuan untuk menciptakan kesadaran 
-                    dan partisipasi aktif masyarakat Batam dalam 
-                    pengelolaan sampah yang lebih efisien dan 
-                    berkelanjutan. Melalui sistem penghargaan berbasis poin,
-                    edukasi lingkungan, dan platform yang memudahkan pengelolaan sampah, Zerotrash mendorong 
-                    perubahan positif menuju kota yang lebih bersih, sehat, dan ramah lingkungan. Dengan setiap
-                    kontribusi kecil, kita bersama-sama membangun masa depan Batam yang lebih hijau dan lebih bersih.</p>
-            </span>
-        </div>
-
-
-        <div class="penjelasan">
-            <span>
-                <h3>Sistem Poin</h3>
-                <h2>HOW IT WORKS</h2>
-            </span>
-            <div class="jelas">
-                <div class="sistem">
-                    <h2 class="clue1 clue">Pengumpulan Sampah</h2>
-                    <h2 class="clue">Penukaran Poin</h2>
-                    <h2 class="clue">Pencairan Poin</h2>
-                    <h2 class="clue">Meningkatkan
-                        Partisipasi Komunitas</h2>
-                    <h2 class="clue">Kampanye Edukasi
-                                    dan Pemberdayaan</h2>
+            <div class="image-section">
+                <div class="usia-section">
+                    <h1>24 +</h1>
+                    <p>Bertahun-Tahun<br>
+                        Pengalaman</p>
                 </div>
-                <div class="sistem2">
-                    <img src="image/gg.png" alt="">
-                    <p>Pengguna Zerotrash dapat mengumpulkan sampah
-                        organik dan non-organik yang telah dipilah. Sampah 
-                        yang telah dipilih sesuai kategori dan memenuhi syarat 
-                        akan diambil oleh petugas atau dapat disetorkan ke
-                        tempat pengumpulan yang telah ditentukan.</p>
-                </div>
+                <img src="../image/diskusi.png" alt="">
             </div>
         </div>
+        
+
+
+
 
         <!-- Footer Section -->
         <footer class="footer">
@@ -154,6 +155,6 @@
     </div>
 
 
-<script src="script.js"></script>
+<script src="../script.js"></script>
 </body>
 </html>
