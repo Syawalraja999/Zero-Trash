@@ -20,14 +20,13 @@ body {
 .header{
     background-color: #f2f0fd;
     box-shadow: 0 0 1px rgba(0, 0,0,0.2);
-    border-radius: 10px;
+    border-radius: 5px 5px 0 0;
     align-items: center;
     max-width: 90%;
     display: flex;
     justify-content: flex-start;
     margin: 0 auto;
-    margin-bottom: 3px;
-    box-shadow: 0 1px 1px #444;
+
 }
 .header img{
     margin-left: 33px;
@@ -55,7 +54,7 @@ body {
 
 /* halaman 1 */
 .container-first{
-    border-radius: 5px;
+    border-radius: 0 0 5px 5px;
     position: relative;
     padding-top: 50px;
     background-color: #252525;
@@ -262,6 +261,7 @@ body {
     border-radius: 5px;
     position: relative;
     max-width: 1210px;
+    height: 500px;
     margin:  0 auto;
     background-color: #133902;
 }
@@ -307,15 +307,16 @@ body {
     
 }
 .kontainer-kanan{
-    grid-template-columns: 1fr 1fr;;
+    grid-template-columns: 1fr 1fr;
+    align-content: start;
+    margin-top: 30px;
     display: grid;
-    align-items: center;
     margin-right: 100px;
     gap: 30px;
 }
 .box-content{
     width: 140px;
-    height: 230px;
+    height: 180px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -338,6 +339,173 @@ body {
 }
 #one-line img{
     margin-bottom: 25px;
+}
+
+/* end halaman 3 */
+
+
+/* halaman 4 */
+
+.paket-harga-kontainer{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.header-paket{
+    width: 40%;
+    padding-bottom: 80px;
+    position: relative;
+    left: 160px;
+}
+.header-paket .box{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.header-paket h5{
+    color: #2f9e33;
+}
+
+
+.list-1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.header-paket p,
+.list-1 p{
+    font-size: 12px;
+}
+
+.list-harga{
+    display: flex;
+    justify-content: space-evenly;
+}
+.box-harga{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 250px;
+    padding: 20px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+.list-1 div{
+    width: 95%;
+    height: 1px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #38761D;
+}
+.list-1 img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: -25px;
+}
+
+.list-1 li p::before{
+    content: "➤";
+    color: #2f9e33;
+}
+.list-1 li{
+    padding-bottom: 10px;
+}
+.list-1 h3{
+    color: #38761D;
+}
+.list-1 ul li{
+    list-style-type: none;
+}
+
+.paket-harga-kontainer .submit{
+    text-align: center;
+    line-height: 30px;
+    background-color: #FFD966;
+    width: 80%;
+    height: 30px;
+    border-radius: 2px;
+    margin: 0 auto;
+}
+/* end halaman 4 */
+.survey-klien-kontainer{
+    margin-top: 50px;
+    padding-top: 100px;
+    width: 1210px;
+    height: 700px;
+    margin: 0 auto;
+    background-color: #252525;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border-radius: 5px;
+}
+
+.header-survey{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 50px;
+}
+.header-survey .judul{
+    width: 60%;
+}
+.header-survey .judul h2{
+    color: #ddd;
+}
+.header-survey .judul h5{
+    color: #FFD966;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header-survey .judul p{
+    font-size: 0.6rem;
+    color: #bbb;
+}
+.header-survey .busur{
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+.header-survey .busur img{
+    margin: 0 5px;
+    width: 45px;
+    height: 45px;
+}
+.boxs-content{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    height: 300px;
+}
+.box-item{
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    justify-content: space-between;
+}
+.person img{
+    width: 60px;
+    height: 60px;
+}
+.person  #star{
+    margin: 20px 0  ;
+    color: #EDF408;
+    text-shadow: 0 0 1px black;
+}
+.person p,
+.name p{
+    font-size: 12px;
 }
 
 
