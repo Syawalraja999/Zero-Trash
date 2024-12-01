@@ -42,7 +42,7 @@ body {
 }
 .navigation{
     margin-right: 245px;
-    margin-left: 253px;
+    margin-left: 180px;
 }
 
 .navigation a:hover,
@@ -507,6 +507,270 @@ body {
 .name p{
     font-size: 12px;
 }
+/* end halaman 4 */
+
+
+/* halaman 5 */
+
+.artikel{
+    width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.header-artikel{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.j-head .head{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.head #p-1{
+    color: #222;
+    font-size: 12px;
+}
+
+.tombol-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 27px;
+    width: 15%;
+    background-color: #38761D;
+    border-radius: 4px;
+    color: #ddd;
+    margin-right: 20px;
+}
+.tombol-head:hover{
+    background-color: #2f9e33;
+}
+
+
+.container-content-artikel{
+    display: flex;
+    justify-content: space-between;
+}
+.big-artikel img{
+    width: 450px;
+}
+
+.big-artikel{
+    position: relative;
+}
+.explaine-artikel{
+    position: absolute;
+    width: 450px;
+    bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 7px;
+}
+.explaine-artikel button{
+    width: 200px;
+    line-height: 22px;
+    height: 28px;
+    background-color: #FFD966;
+    border-radius: 10px;
+}
+.explaine-artikel div,
+.explaine-artikel div span,
+.explaine-child-artikel div,
+.explaine-child-artikel span{
+    display: flex;
+}
+
+.explaine-artikel div span h5,
+.explaine-child-artikel span h5{
+    margin-right: 7px;
+}
+.explaine-artikel h4,
+.explaine-artikel span{
+    color: #fff;
+}
+#user-square,
+#clock-date{
+    background-color: white;
+    border-radius: 100%;
+    width: 20px;
+}
+.container-child-artikel{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.box-child{
+    display: flex;
+    gap: 15px;
+}
+
+.explaine-child-artikel #user-square,
+.explaine-child-artikel #clock-date{
+    background-color: white;
+    border-radius: 100%;
+    width: 18px;
+    margin-right: 3px;
+}
+.explaine-child-artikel div span h5{
+    font-size: 12px;
+}
+.explaine-child-artikel span{
+    font-size: 13px;
+}
+
+.explaine-child-artikel button{
+    width: 150px;
+    height: 25px;
+    background-color: #FFD966;
+    border-radius: 10px;
+}
+.explaine-child-artikel{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 200px;
+}
+.child-content img {
+    width: 200px;
+}
+
+.explaine-artikel button:hover,
+.explaine-child-artikel button:hover{
+    background-color: #fff;
+}
+
+/* end halaman 5 */
+
+
+
+/* halaman 6 */
+.footer-map img{
+    width: 100%;
+    height: 400px;
+}
+.footer-map{
+    margin-top: 100px;
+}
+/* end halaman 6 */
+
+
+/* halaman 7 */
+
+  .social-icons i{
+    color: #fff;
+  }
+  .footer {
+    background-color: #003300; /* Warna hijau tua */
+    color: white;
+    padding: 40px 20px;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    max-width: 30%;
+  }
+  
+  .footer-logo .logo {
+    width: 100px;
+  }
+  
+  .footer-logo p {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  .footer-links {
+    max-width: 20%;
+  }
+  
+  .footer-links h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-links ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  .footer-links ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-contact {
+    max-width: 30%;
+  }
+  
+  .footer-contact h4 {
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .newsletter {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    flex: 1;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    color: #003300;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .newsletter button:hover {
+    background-color: #e6b800;
+  }
+  
 
 
 /* QUERY responsive */

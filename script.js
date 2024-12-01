@@ -13,3 +13,10 @@ document.getElementById('myButton').addEventListener('click', function (event) {
     event.preventDefault(); // Mencegah form mengirimkan data
 });
 
+
+document.querySelector('select').addEventListener('change', function () {
+    if (this.value === "") {
+        alert("Harap Pilih Hadiah!!");
+    }
+});
+

@@ -1,0 +1,131 @@
+.container{
+    margin: 0 auto;
+    width: 1210px;
+    margin-top: 32px;
+}
+
+/* halaman 1 */
+.hero{
+    position: absolute;
+    bottom: 0;
+}
+.container-point{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.box-point,
+.point-ditukar{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.point-anda{
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
+    border-radius: 100px;
+    background-color: #FFD996;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 0 3px #333;
+}
+.ket-point p{
+    font-size: 13px;
+    font-weight: 600;
+    color: #111;
+}
+.total-sampah{
+    padding-top: 15px;
+    background-color: #FFD996;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    background-color: #FFD996;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 3px #333;
+}
+.point-anda p,
+.total-sampah p{
+    font-weight: 500;
+    font-size: 25px;
+}
+.point-ditukar button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #38761D;
+    color: #fff;
+}
+.point-ditukar button:hover{
+    background-color: #333;
+}
+/* end halaman 1 */
+
+/* halaman 2 */
+.ketentuan{
+    padding: 20px;
+    width: 100%;
+    background-color: #FFFFCC;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.ketentuan h3{
+    color: #38761D;
+}
+.ketentuan ul{
+    margin-left: 30px;
+    margin-bottom: 10px;
+}
+/* end halaman 2 */
+
+/* halaman 3 */
+.info-point{
+    display: flex;
+    width: 100%;
+    height: 130px;
+    background-color: #38761D;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+
+.container-voucher{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    gap: 20px 0;
+    justify-content: center;
+    text-align: center;
+    
+}
+.box-margin-voucher{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.voucher-box{
+    width: 60%;
+    border: 1px solid #222;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.voucher-box img{
+    width: 100%;
+    margin: 0;
+}
