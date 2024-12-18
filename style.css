@@ -12,6 +12,64 @@ body {
 }
 
 
+/* pejantara icon */
+.logo-pejantara img{
+    width: 250px;
+    margin-left: 20px;
+    position: absolute;
+}
+
+/* dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+.dropbtn:hover{
+    color: #fff;
+    background-color: #359381;
+    border-radius: 20px;
+}
+
+  /* Styling untuk dropdown content */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 15px;
+  }
+
+  /* Styling link di dalam dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  /* Hover effect untuk link */
+
+
+  /* Tampilkan dropdown content saat dropdown di-hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* Styling tombol dropdown */
+  .dropbtn {
+    color: #359381;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+  }
+
+
+
+
 /* hero */
 .hero {
     display: grid;
@@ -23,6 +81,8 @@ body {
 
 .hero-content {
     position: absolute;
+    max-width: 800px;
+    margin-bottom: 20px;
     margin-left: 15px;
     display: flex;
     flex-direction: column;
@@ -176,23 +236,13 @@ body {
     color: #fff;
 }
 
-.dashboard-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
 
-.chart-container {
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+/* riwayat */
+.navigation .riwayat-nav{
+    color: #111;
 }
 
 
-
-@media (min-width:480px){
     .header {
         position: absolute;
         top: 0;
@@ -272,7 +322,7 @@ body {
     .container-syms{
         gap: 10px;
     }
-}
+
 
 
 
@@ -317,7 +367,6 @@ p {
     border-radius: 8px;
     padding: 20px;
     margin-top: 20px;
-    width: 100%;
     max-width: 700px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -445,6 +494,9 @@ select:focus {
     font-size: 35px;
     font-family: 'Courier New', Courier, monospace;
 }
+.text-section p{
+    font-size: 13px;
+}
 .text-section li{
     list-style-type: none;
 }
@@ -455,6 +507,7 @@ select:focus {
 
 .about-info{
     display: flex;
+    justify-content: space-between;
     gap: 5px;
 }
 .about-info h5{
@@ -478,22 +531,4 @@ select:focus {
     position: relative;
 }
 
-.usia-section{
-    border: 2px solid rgb(144, 105, 182);
-    border-radius: 10px;
-    text-align: center;
-    background-color: #fff;
-    z-index: 5;
-    position: absolute;
-    bottom: 45px;
-    left: -30px;
-    width: 150px;
-    height: 120px;
-}
-.usia-section p{
-    font-weight: bold;
-    color: #222;
-}
-.usia-section h1{
-    color: #1c611e;
-}
+

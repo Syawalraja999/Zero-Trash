@@ -1,0 +1,83 @@
+#info-industri{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.navigation{
+    display: flex;
+}
+
+.container-form-penukaran{
+position: relative;
+top: 250px;
+width: 100%;
+height: 110vh;
+}
+.container-form-penukaran h3{
+    text-align: center;
+    color: #38761D;
+    margin-bottom: 30px;
+}
+
+#side-megaphone #one{
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: -39px;
+    
+}
+.icon-ngambang #two{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+}
+#nama,
+#telepon,
+#email,
+#alamat
+#jenis,
+#berat{
+    width: 500px;
+}
+#alamat{
+    height: 130px;
+}
+.form{
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.form label{
+    color: #111;
+}
+textarea{
+    resize: none;
+}
+
+.checkbox-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer; 
+}
+
+.form button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #FFD966;
+    font-weight: 600;
+}
+.form button:hover{
+    background-color: blanchedalmond;
+}

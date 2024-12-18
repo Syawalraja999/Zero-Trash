@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Penukaran</title>
+    <head>
+        <link rel="icon" href="../logo/logo1.png" type="image/png">
+    </head> 
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h2 class="logo"><img src="../logo/logo1.png" alt="Logo"></h2>
+        <nav class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="../layanan/layanan.html">Layanan</a>
+            <a href="../tukar point/point.html">Penukaran</a>
+            <a href="" class="active">Pengumpulan</a>
+            <a href="../contact/contact.html">Contact</a>
+        </nav>
+    </div>
+</div> 
+    <div class="icon-ngambang">
+        <img id="two" src="../logo/bottle.png" alt="">
+    </div>
+<div class="container-form-penukaran">
+    <h3>Isi Data Diri Untuk Pengumpulan Data</h3>
+    <div class="form" id="side-megaphone">
+        <label for="nama">Nama Lengkap</label><img id="one" src="../logo/megaphone.png" alt="">
+        <input type="nama" id="nama">
+    </div>
+    <div class="form">
+        <label for="telepon">Nomor Telepon</label>
+        <input type="telepon" id="telepon">
+    </div>
+    <div class="form">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+    </div>
+    <div class="form">
+        <label for="berat">Berat Sampah (kg)</label>
+        <input type="berat" id="berat">
+    </div>
+    <div class="form">
+        <label for="industri">Jenis Industri</label>
+        <input type="berat" id="berat">
+    </div>
+    <span class="form" id="info-industri">*tulis komunitas atau perusahaan darimana, tulis pribadi jika milik sendiri*</span>
+    <div class="form">
+        <label for="alamat">Alamat</label>
+        <textarea name="alamat" id="alamat"></textarea>
+    </div>
+    <div class="form">
+        <label for="jenis">Jenis Hadiah</label>
+        <select name="jenis" id="jenis">
+            <option value="" selected disabled>Pilih Hadiah</option>
+            <option value="option1">Point Zero Trash</option>
+            <option value="option1">Uang Tunai</option>
+            <option value="option2">Saldo Gopay</option>
+            <option value="option2">Saldo Shopee</option>
+            <option value="option2">Saldo Dana</option>
+        </select>
+    </div>
+        <div class="checkbox-container form">
+            <input type="checkbox" id="terms" name="terms">
+            <label for="terms">Saya setuju dengan syarat dan ketentuan penukaran poin.</label>
+        </div>
+    <div class="form">
+        <button class="claim-button" onclick="klaimPengumpulan()">Klaim</button>
+    </div>    
+
+</div>
+
+<script src="../script.js"></script>
+    
+</body>
+</html>

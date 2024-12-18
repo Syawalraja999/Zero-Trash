@@ -6,6 +6,7 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <link rel="stylesheet" href="../style.css">
   <head>
     <link rel="icon" href="../logo/logo1.png" type="image/png">
@@ -19,32 +20,32 @@
             <a href="../index.html">Home</a>
             <a href="../layanan/layanan.html">Layanan</a>
             <a href="../tukar point/point.html">Tukar Point</a>
-            <a href="../penukaran/penukaran.html">Penukaran</a>
+            <a href="../pengumpulan/pengumpulan.html">Pengumpulan</a>
             <a href="" class="active">Contact</a>
         </nav>
     </div>
     </div> 
   <div class="contact-container">
     <header>
-      <h1>Contact Us</h1>
-      <p>We're here to help. Reach out to us through the following channels.</p>
+      <h1>Kontak Kami</h1>
+      <p>Kami selalu ada untuk membantu. Pastikan kamu sudah mengikuti media sosial kami.</p>
     </header>
     <div class="contact-section">
       <!-- Contact Info -->
       <div class="contact-info">
         <div class="info-card">
-          <h2>Customer Support</h2>
-          <p>Email: <a href="mailto:support@company.com">support@company.com</a></p>
-          <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+          <h2>Layanan Pelanggan</h2>
+          <p>Email: <a href="mailto:support@company.com">zerotrash@gmail.com</a></p>
+          <p>Phone: <a href="tel:+1234567890">+62 324-567-890</a></p>
         </div>
         <div class="info-card">
-          <h2>Headquarters</h2>
-          <p>Company Inc.</p>
-          <p>123 Innovation Street</p>
-          <p>Silicon Valley, CA 94025</p>
+          <h2>Komunitas Kami</h2>
+          <p>Zero Trash Inc.</p>
+          <p>Batam, jl.kenangan no 14</p>
+          <p>Tepat Di depan Statiun</p>
         </div>
         <div class="info-card">
-          <h2>Follow Us</h2>
+          <h2>Ikuti Kami</h2>
           <div class="social-icons">
                 <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
                 <a href="#" class="icon"><i class="fa-brands fa-facebook"></i></a>
@@ -56,9 +57,9 @@
 
       <!-- Contact Form -->
       <form class="contact-form">
-        <h2>Get in Touch</h2>
+        <h2>Hubungi Kami!</h2>
         <div class="form-group">
-          <label for="name">Full Name</label>
+          <label for="name">Nama Lengkap</label>
           <input type="text" id="name" name="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
@@ -66,12 +67,13 @@
           <input type="email" id="email" name="email" placeholder="Enter your email" required>
         </div>
         <div class="form-group">
-          <label for="message">Message</label>
+          <label for="message">Keluhan Anda!</label>
           <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
         </div>
-        <button type="submit" class="submit-btn">Submit</button>
+        <div id="myButton-contact" type="submit" class="submit-btn" onclick="showAlert()">Submit</div>
       </form>
     </div>
   </div>
+  <script src="../script.js"></script>
 </body>
 </html>

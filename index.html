@@ -8,10 +8,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <head>
-        <link rel="icon" href="../logo/logo1.png" type="image/png">
+        <link rel="icon" href="logo/logo1.png" type="image/png">
     </head>    
-
-
 </head>
 <body>
     <div class="container">
@@ -20,9 +18,16 @@
             <nav class="navigation">
                 <a href="index.html" class="active">Home</a>
                 <a href="layanan/layanan.html">Layanan</a>
-                <a href="tukar point/point.html">Tukar Point</a>
-                <a href="penukaran/penukaran.html">Penukaran</a>
+                    <div class="dropdown">
+                        <button class="dropbtn">Kumpulkan</button>
+                    <div class="dropdown-content">
+                        <a href="pengumpulan/pengumpulan.html">Pengumpulan</a>
+                        <a href="tukar point/point.html">Penukaran</a>
+                    </div>
+                    </div>
                 <a href="contact/contact.html">Contact</a>
+                <a href="riwayat/riwayat.html" class="riwayat-nav">Profil</a>
+                <a href="panduan/panduan.html" target="_blank">Panduan</a>
             </nav>
         </div>
 
@@ -34,8 +39,8 @@
                     untuk berpartisipasi aktif dalam menjaga kebersihan <br>
                     lingkungan dengan memberikan hadiah sebagai <br>
                     insentif atas kontribusi mereka.</p>
-                <span><a href="#" class="button">Explore</a>
-                    <a href="#" class="button1">learn more</a></span>
+                <span><a href="#text-section" class="button">Explore</a>
+                    <a href="layanan/layanan.html" class="button1">learn more</a></span>
 
                     <div class="form-container">
                         <form>
@@ -47,19 +52,20 @@
                             <label for="service">Melayani*</label>
                             <select id="service">
                             <option value="" disabled selected>Pilihan Layanan</option>
-                            <option value="layanan1">Layanan 1</option>
-                            <option value="layanan2">Layanan 2</option>
+                            <option value="layanan1">Pengumpulan</option>
+                            <option value="layanan2">Penukaran</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label for="industry">Jenis Industri*</label>
                             <select id="industry">
                             <option value="" disabled selected>Pilih Industri</option>
-                            <option value="industri1">Industri 1</option>
-                            <option value="industri2">Industri 2</option>
+                            <option value="industri1">Perusahaan</option>
+                            <option value="industri2">Komunitas</option>
+                            <option value="industri3">Pribadi</option>
                             </select>
                         </div>
-                        <button  id="myButton" type="submit" class="submit-button" onclick="showAlert()">Pesan Sekarang</button>
+                        <button  id="myButton" type="submit" class="submit-button"  onclick="redirectUser()">Pesan Sekarang</button>
                         </form>
                     </div>
 
@@ -95,52 +101,55 @@
 
             <div class="container-proses">
                 <div class="proses">
-                    <h4>Pembuangan yang Aman</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi</p>
+                    <h4>Sistem Pengelolaan Terintegrasi</h4>
+                    <p>ZeroTrash menyediakan layanan berbasis
+                        teknologi yang mempermudah 
+                    proses pengelolaan sampah</p>
                 </div>
                 <div class="garis"></div>
                 <div class="proses">
-                    <h4>Penjemputan Terjadwal</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi</p>
+                    <h4>Penghargaan yang Mendorong Partisipasi</h4>
+                    <p>Memberikan insentif berupa poin yang dapat ditukar 
+                        dengan hadiah untuk mendorong masyarakat 
+                        konsisten dalam pengelolaan sampah.</p>
                 </div>
                 <div class="garis"></div>
                 <div class="proses">
-                    <h4>Daur Ulang yang Luas</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus commodi</p>
+                    <h4>Fokus pada Edukasi dan Kesadaran Lingkungan</h4>
+                    <p>Melalui kampanye dan program edukasi, ZeroTrash 
+                        membantu masyarakat memahami pentingnya daur 
+                        ulang dan pengelolaan sampah yang efektif</p>
                 </div>
             </div>
         </section>
 
-
+        <div class="logo-pejantara">
+            <img src="logo/pejantara-icon.png" alt="">
+        </div>
         <div class="container-info">
-            <div class="text-section">
+            <div class="text-section" id="text-section">
                 <h3 id="j1">Tentang Kami</h3>
                 <h3 id="j2">Pakar Terpercaya dalam Pengelolaan Sampah dan Daur Ulang</h3>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat facilis doloribus enim recusandae natus repellendus rerum autem quibusdam ad </p>
+                <p>ZeroTrash hadir sebagai solusi inovatif dalam pengelolaan sampah di Kota Batam. Kami berkomitmen untuk menciptakan perubahan nyata dengan memberdayakan masyarakat, mengintegrasikan teknologi, dan memperkenalkan praktik pengelolaan sampah yang efisien dan berkelanjutan. Sebagai platform yang menghubungkan masyarakat dengan layanan pengelolaan sampah, ZeroTrash menjadi mitra terpercaya dalam menciptakan kota yang lebih bersih dan ramah lingkungan.                </p>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur.</li>
+                    <li>Sistem Digital Terpadu</li>
+                    <li>Penghargaan Berbasis Poin</li>
+                    <li>Fokus pada Edukasi dan Kesadaran Lingkungan</li>
                 </ul>
                 <div class="about-info">
                     <span>
                         <h5>Layanan Sampah</h5>
-                        <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                        <p>Penukaran Sampah dengan <br> Poin.</p>
                     </span>
                     <span>
                         <h5>Daur Ulang</h5>
-                        <p>Lorem ipsum dolor, sit amet <br>consectetur adipisicing.</p>
+                        <p>Daur Ulang dan Pengolahan <br> Sampah.</p>
                     </span>
                 </div>
                 <div class="btn-p-lanjut"><button>Pelajari Lebih Lanjut</button></div>
             </div>
 
             <div class="image-section">
-                <div class="usia-section">
-                    <h1>24 +</h1>
-                    <p>Bertahun-Tahun<br>
-                        Pengalaman</p>
-                </div>
                 <img src="image/diskusi.png" alt="">
             </div>
         </div>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Tukar Point</title>
     <head>
         <link rel="icon" href="../logo/logo1.png" type="image/png">
@@ -17,8 +18,8 @@
             <nav class="navigation">
                 <a href="../index.html">Home</a>
                 <a href="../layanan/layanan.html">Layanan</a>
-                <a href="" class="active">Tukar Point</a>
-                <a href="../penukaran/penukaran.html">Penukaran</a>
+                <a href="" class="active">Penukaran</a>
+                <a href="../pengumpulan/pengumpulan.html">Pengumpulan</a>
                 <a href="../contact/contact.html">Contact</a>
             </nav>
         </div>
@@ -28,25 +29,24 @@
                 <div class="box-point">
                     <div class="point-anda">
                         <h5>point anda</h5>
-                        <p>1500</p>
+                        <p></p>
                     </div>
                     <div class="ket-point">
-                        <h3>Anda Telah Berhasil Mengumpulkan <span>1,500</span></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere maxime laboriosam <br> voluptatum provident! 
-                            Placeat animi fugiat eligendi ad vitae <br>
-                            dignissimos autem cum est rerum. Beatae quo placeat veniam deserunt dolore?</p>
+                        <h3>Anda Telah Berhasil Mengumpulkan <span></span></h3>
+                        <p>Poin ini adalah bukti kontribusi Anda dalam menjaga kebersihan dan kelestarian lingkungan. <br> Dengan sistem penukaran ini, kami ingin memberikan apresiasi berupa hadiah  yang bermanfaat untuk Anda. <br> Mari, tukarkan poin Anda dan nikmati berbagai pilihan hadiah menarik yang bisa langsung Anda manfaatkan!"</p>
                     </div>
                 </div>
 
                 <div class="point-ditukar">
                     <div class="total-sampah">
                         <h5>Sampah anda</h5>
-                        <p>1500</p>
+                        <p>1000</p>
                     </div>
-                    <button>Tukarkan Point Anda</button>
+                    <button class="tukarkan-sampah" onclick="tukarkansampah()">Tukarkan Point Anda</button>
                 </div>
             </div>
         </div>
+        <p id="quotes">"Setiap tindakan kecil, seperti membuang sampah pada tempatnya, <br> dapat membawa dampak besar bagi lingkungan kita. Terima kasih atas <br>kontribusi Anda dalam mewujudkan kota yang lebih bersih dan hijau!"</p>
 
         <div class="ketentuan">
             <h3>Syarat Dan Ketentuan Penukaran Poin</h3>
@@ -62,76 +62,78 @@
         <div class="info-point">
             <div class="item-sampah">
                 <h4>Sampah Anda</h4>
-                <span>1500</span>
+                <span>1000</span>
             </div>
             <div class="garis"></div>
             <div class="item-point">
                 <h4>Point Anda</h4>
-                <span>1500</span>
+                <span></span>
             </div>
             <div class="garis"></div>
             <div class="riwayat-penukaran">
-                <h4>Riwayat Penukaran</h4>
+                <h4><a href="../riwayat/riwayat.html">Riwayat Penukaran</a></h4>
             </div>
         </div>
     </div>
     <div class="container-voucher">
-        <div class="box-margin-voucher">
+        <div class="box-margin-voucher" onclick="kamuYakin()">
             <div class="voucher-box">
                 <img src="../image/sedotan.png" alt="">
                 <p>Saldo E-Wallet Rp.10.000</p>
                 <span>1000 point</span>
             </div>
         </div>
-        <div class="box-margin-voucher">
+        <div class="box-margin-voucher" onclick="kamuYakin()">
             <div class="voucher-box">
                 <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
+                <p>Voucher Pulsa Rp25,000</p>
+                <span>2500 point</span>
+            </div>
+        </div>
+        <div class="box-margin-voucher" onclick="kamuYakin()">
+            <div class="voucher-box">
+                <img src="../image/sedotan.png" alt="">
+                <p>Botol Minum Stainless (500 ml)</p>
+                <span>2000 point</span>
+            </div>
+        </div>
+        <div class="box-margin-voucher" onclick="kamuYakin()">
+            <div class="voucher-box">
+                <img src="../image/sedotan.png" alt="">
+                <p>Sedotan Stainless Steel</p>
                 <span>1000 point</span>
             </div>
         </div>
-        <div class="box-margin-voucher">
+        <div class="box-margin-voucher" onclick="kamuYakin()">
             <div class="voucher-box">
                 <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
+                <p>Donasi Rp20,000 untuk Program Lingkungan</p>
                 <span>1000 point</span>
             </div>
         </div>
-        <div class="box-margin-voucher">
+        <div class="box-margin-voucher" onclick="kamuYakin()">
             <div class="voucher-box">
                 <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
-                <span>1000 point</span>
+                <p>Tote Bag Lipat Ramah Lingkungan</p>
+                <span>1500 point</span>
             </div>
         </div>
-        <div class="box-margin-voucher">
+        <div class="box-margin-voucher" onclick="kamuYakin()">
             <div class="voucher-box">
                 <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
-                <span>1000 point</span>
+                <p>Paket Benih Tanaman</p>
+                <span>1500 point</span>
             </div>
         </div>
-        <div class="box-margin-voucher">
+        <div class="box-margin-voucher" onclick="kamuYakin()">
             <div class="voucher-box">
                 <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
-                <span>1000 point</span>
-            </div>
-        </div>
-        <div class="box-margin-voucher">
-            <div class="voucher-box">
-                <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
-                <span>1000 point</span>
-            </div>
-        </div>
-        <div class="box-margin-voucher">
-            <div class="voucher-box">
-                <img src="../image/sedotan.png" alt="">
-                <p>Saldo E-Wallet Rp.10.000</p>
-                <span>1000 point</span>
+                <p>Stiker atau Pin Eksklusif Kampanye Lingkungan</p>
+                <span>500 point</span>
             </div>
         </div>
     </div>
+
+    <script src="../script.js"></script>
 </body>
 </html>
